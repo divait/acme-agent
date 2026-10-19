@@ -1,0 +1,429 @@
+{
+  "language": "es",
+  "calls": [
+    [
+      "record",
+      "consent_recording",
+      "yes",
+      "sí, claro"
+    ],
+    [
+      "record",
+      "role",
+      "delivery_rider",
+      "quiero ser repartidor"
+    ],
+    [
+      "record",
+      "full_name",
+      "Carlos Méndez",
+      "me llamo Carlos Méndez"
+    ],
+    [
+      "record",
+      "phone",
+      "612 345 678",
+      "seis uno dos, tres cuatro cinco, seis siete ocho"
+    ],
+    [
+      "record",
+      "preferred_store_id",
+      "Sol",
+      "el de Sol en Madrid"
+    ],
+    [
+      "record",
+      "availability",
+      "mon:morning,wed:morning,sat:night",
+      "lunes y miércoles por la mañana y sábados por la noche"
+    ],
+    [
+      "record",
+      "weekly_hours",
+      "20",
+      "unas veinte horas"
+    ],
+    [
+      "record",
+      "start_date",
+      "2026-11-02",
+      "el lunes que viene dentro de dos semanas"
+    ],
+    [
+      "record",
+      "right_to_work",
+      "yes",
+      "sí tengo permiso"
+    ],
+    [
+      "record",
+      "is_18_or_over",
+      "yes",
+      "sí, soy mayor"
+    ],
+    [
+      "record",
+      "driving_licence",
+      "yes",
+      "sí tengo carné de moto"
+    ],
+    [
+      "record",
+      "own_vehicle",
+      "yes",
+      "tengo moto propia"
+    ],
+    [
+      "record",
+      "experience_months",
+      "24",
+      "dos años repartiendo"
+    ],
+    [
+      "confirm_profile"
+    ],
+    [
+      "end",
+      "completed"
+    ]
+  ],
+  "expected": {
+    "schema_version": "1.2",
+    "conversation_id": "conv-happy_path_rider_es",
+    "started_at": "2026-10-18T09:00:00Z",
+    "ended_at": "2026-10-18T09:00:00Z",
+    "end_reason": "completed",
+    "channel": "voice",
+    "language": {
+      "detected": "es",
+      "switches": []
+    },
+    "model": {
+      "live": "live-model",
+      "text": "text-model",
+      "prompt_version": "test"
+    },
+    "candidate": {
+      "consent_recording": true,
+      "role": "delivery_rider",
+      "full_name": "Carlos Méndez",
+      "phone": "+34612345678",
+      "email": null,
+      "preferred_store_id": "mad-sol",
+      "availability": [
+        {
+          "day": "mon",
+          "shift": "morning"
+        },
+        {
+          "day": "wed",
+          "shift": "morning"
+        },
+        {
+          "day": "sat",
+          "shift": "night"
+        }
+      ],
+      "weekly_hours": 20,
+      "start_date": "2026-11-02",
+      "right_to_work": true,
+      "is_18_or_over": true,
+      "driving_licence": true,
+      "own_vehicle": true,
+      "experience_months": 24,
+      "experience_summary": null,
+      "languages": []
+    },
+    "slot_meta": {
+      "consent_recording": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "sí, claro",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": true,
+        "cross_check_agrees": true
+      },
+      "role": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "quiero ser repartidor",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": "delivery_rider",
+        "cross_check_agrees": true
+      },
+      "full_name": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "me llamo Carlos Méndez",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": null,
+        "cross_check_agrees": null
+      },
+      "phone": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "seis uno dos, tres cuatro cinco, seis siete ocho",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": null,
+        "cross_check_agrees": null
+      },
+      "preferred_store_id": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "el de Sol en Madrid",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": null,
+        "cross_check_agrees": null
+      },
+      "availability": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "lunes y miércoles por la mañana y sábados por la noche",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": [
+          {
+            "day": "mon",
+            "shift": "morning"
+          },
+          {
+            "day": "wed",
+            "shift": "morning"
+          },
+          {
+            "day": "sat",
+            "shift": "night"
+          }
+        ],
+        "cross_check_agrees": true
+      },
+      "weekly_hours": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "unas veinte horas",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": 20,
+        "cross_check_agrees": true
+      },
+      "start_date": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "el lunes que viene dentro de dos semanas",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": "2026-10-19",
+        "cross_check_agrees": false
+      },
+      "right_to_work": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "sí tengo permiso",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": true,
+        "cross_check_agrees": true
+      },
+      "is_18_or_over": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "sí, soy mayor",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": true,
+        "cross_check_agrees": true
+      },
+      "driving_licence": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "sí tengo carné de moto",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": true,
+        "cross_check_agrees": true
+      },
+      "own_vehicle": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "tengo moto propia",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": {
+          "issue": "unrecognized"
+        },
+        "cross_check_agrees": null
+      },
+      "experience_months": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "dos años repartiendo",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": 24,
+        "cross_check_agrees": true
+      }
+    },
+    "screening": {
+      "status": "meets_requirements",
+      "knockouts": [],
+      "review_reasons": [],
+      "flags": [],
+      "reconciliation_conflicts": []
+    },
+    "sentiment": null,
+    "summary": null,
+    "transcript": [],
+    "events": [
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "consent_recording",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "phase_changed",
+        "payload": {
+          "from": "greeting",
+          "to": "collecting"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "role",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "full_name",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "phone",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "preferred_store_id",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "availability",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "weekly_hours",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "start_date",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "right_to_work",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "is_18_or_over",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "driving_licence",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "own_vehicle",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "experience_months",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "phase_changed",
+        "payload": {
+          "from": "collecting",
+          "to": "confirmation"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "phase_changed",
+        "payload": {
+          "from": "confirmation",
+          "to": "closing"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "phase_changed",
+        "payload": {
+          "from": "closing",
+          "to": "ended"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "interview_ended",
+        "payload": {
+          "reason": "completed"
+        }
+      }
+    ],
+    "metrics": {},
+    "previous_conversation_id": null
+  }
+}

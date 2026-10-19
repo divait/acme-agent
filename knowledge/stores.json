@@ -1,0 +1,110 @@
+[
+  {
+    "id": "mad-sol",
+    "name": "Acme Burgers Sol",
+    "city": "Madrid",
+    "area": "Sol",
+    "country": "ES",
+    "address": "Calle de los Pepinillos 7",
+    "opening_hours": "10:00–00:00"
+  },
+  {
+    "id": "mad-chamberi",
+    "name": "Acme Burgers Chamberí",
+    "city": "Madrid",
+    "area": "Chamberí",
+    "country": "ES",
+    "address": "Calle de la Salsa Secreta 21",
+    "opening_hours": "10:00–00:00"
+  },
+  {
+    "id": "bcn-gracia",
+    "name": "Acme Burgers Gràcia",
+    "city": "Barcelona",
+    "area": "Gràcia",
+    "country": "ES",
+    "address": "Carrer de la Mostassa 12",
+    "opening_hours": "10:00–23:30"
+  },
+  {
+    "id": "bcn-eixample",
+    "name": "Acme Burgers Eixample",
+    "city": "Barcelona",
+    "area": "Eixample",
+    "country": "ES",
+    "address": "Carrer del Ketchup 45",
+    "opening_hours": "10:00–00:00"
+  },
+  {
+    "id": "vlc-ruzafa",
+    "name": "Acme Burgers Ruzafa",
+    "city": "Valencia",
+    "area": "Ruzafa",
+    "country": "ES",
+    "address": "Carrer de les Patates Braves 8",
+    "opening_hours": "11:00–23:30"
+  },
+  {
+    "id": "vlc-centro",
+    "name": "Acme Burgers Valencia Centro",
+    "city": "Valencia",
+    "area": "Centro",
+    "country": "ES",
+    "address": "Carrer del Pa de Hamburguesa 16",
+    "opening_hours": "11:00–00:00"
+  },
+  {
+    "id": "cdmx-roma",
+    "name": "Acme Burgers Roma Norte",
+    "city": "Ciudad de México",
+    "area": "Roma Norte",
+    "country": "MX",
+    "address": "Calle del Aguacate 33",
+    "opening_hours": "11:00–23:00"
+  },
+  {
+    "id": "cdmx-condesa",
+    "name": "Acme Burgers Condesa",
+    "city": "Ciudad de México",
+    "area": "Condesa",
+    "country": "MX",
+    "address": "Avenida de las Papas Fritas 210",
+    "opening_hours": "11:00–23:00"
+  },
+  {
+    "id": "cdmx-polanco",
+    "name": "Acme Burgers Polanco",
+    "city": "Ciudad de México",
+    "area": "Polanco",
+    "country": "MX",
+    "address": "Calle del Queso Fundido 58",
+    "opening_hours": "10:00–23:00"
+  },
+  {
+    "id": "gdl-chapalita",
+    "name": "Acme Burgers Chapalita",
+    "city": "Guadalajara",
+    "area": "Chapalita",
+    "country": "MX",
+    "address": "Avenida de la Cebolla Caramelizada 340",
+    "opening_hours": "11:00–23:00"
+  },
+  {
+    "id": "gdl-providencia",
+    "name": "Acme Burgers Providencia",
+    "city": "Guadalajara",
+    "area": "Providencia",
+    "country": "MX",
+    "address": "Calle del Chile Habanero 91",
+    "opening_hours": "11:00–23:00"
+  },
+  {
+    "id": "gdl-andares",
+    "name": "Acme Burgers Andares",
+    "city": "Guadalajara",
+    "area": "Andares",
+    "country": "MX",
+    "address": "Boulevard de los Nachos 125",
+    "opening_hours": "10:00–22:00"
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {"turn": 1, "speaker": "agent", "text": "Hola, soy Ana, de Acme Burgers. Esta conversación se graba para el proceso de selección, ¿estás de acuerdo?"},
+  {"turn": 2, "speaker": "candidate", "text": "Sí, de acuerdo, no hay problema."},
+  {"turn": 3, "speaker": "agent", "text": "Gracias. ¿A qué puesto te gustaría presentarte y cómo te llamas?"},
+  {"turn": 4, "speaker": "candidate", "text": "Me llamo Marta López García y quiero trabajar de repartidora."},
+  {"turn": 5, "speaker": "agent", "text": "Encantada, Marta. ¿Me das tu teléfono y tu correo?"},
+  {"turn": 6, "speaker": "candidate", "text": "Mi teléfono es 612 345 678 y mi correo es marta.lopez@example.com."},
+  {"turn": 7, "speaker": "agent", "text": "Perfecto. ¿Cuántas horas a la semana te vendrían bien?"},
+  {"turn": 8, "speaker": "candidate", "text": "Unas veinticinco horas a la semana, sobre todo por las mañanas."},
+  {"turn": 9, "speaker": "agent", "text": "Genial. ¿Tienes permiso para trabajar en España y tienes más de 18 años?"},
+  {"turn": 10, "speaker": "candidate", "text": "Sí, tengo permiso de trabajo y soy mayor de edad. Por cierto, ¿ponéis uniforme?"},
+  {"turn": 11, "speaker": "agent", "text": "Gracias, Marta. Un compañero de recursos humanos te contactará pronto. ¡Hasta luego!"}
+]

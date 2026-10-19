@@ -1,0 +1,34 @@
+# Private reference material
+raw/
+
+# Runtime data (conversations, audio)
+data/conversations/
+data/audio/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Secrets / local config
+.env
+.env.*
+!.env.example
+*.json.key
+service-account*.json
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+.claude/launch.json
+data/index.npz
+.anton-worktrees/

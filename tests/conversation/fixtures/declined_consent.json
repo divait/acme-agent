@@ -1,0 +1,115 @@
+{
+  "language": "es",
+  "calls": [
+    [
+      "record",
+      "consent_recording",
+      "no",
+      "prefiero que no"
+    ],
+    [
+      "record",
+      "consent_recording",
+      "no",
+      "prefiero que no"
+    ],
+    [
+      "end",
+      "declined_consent"
+    ]
+  ],
+  "expected": {
+    "schema_version": "1.2",
+    "conversation_id": "conv-declined_consent",
+    "started_at": "2026-10-18T09:00:00Z",
+    "ended_at": "2026-10-18T09:00:00Z",
+    "end_reason": "declined_consent",
+    "channel": "voice",
+    "language": {
+      "detected": "es",
+      "switches": []
+    },
+    "model": {
+      "live": "live-model",
+      "text": "text-model",
+      "prompt_version": "test"
+    },
+    "candidate": {
+      "consent_recording": false,
+      "role": null,
+      "full_name": null,
+      "phone": null,
+      "email": null,
+      "preferred_store_id": null,
+      "availability": [],
+      "weekly_hours": null,
+      "start_date": null,
+      "right_to_work": null,
+      "is_18_or_over": null,
+      "driving_licence": null,
+      "own_vehicle": null,
+      "experience_months": null,
+      "experience_summary": null,
+      "languages": []
+    },
+    "slot_meta": {
+      "consent_recording": {
+        "attempts": 2,
+        "source": "live_tool",
+        "raw": null,
+        "corrected": false,
+        "status": "filled",
+        "cross_check": null,
+        "cross_check_agrees": null
+      }
+    },
+    "screening": {
+      "status": "needs_human_review",
+      "knockouts": [],
+      "review_reasons": [
+        "REVIEW_UNRESOLVED_SLOTS",
+        "REVIEW_INCOMPLETE_CALL"
+      ],
+      "flags": [],
+      "reconciliation_conflicts": []
+    },
+    "sentiment": null,
+    "summary": null,
+    "transcript": [],
+    "events": [
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "consent_recording",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "phase_changed",
+        "payload": {
+          "from": "greeting",
+          "to": "closing"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "phase_changed",
+        "payload": {
+          "from": "closing",
+          "to": "ended"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "interview_ended",
+        "payload": {
+          "reason": "declined_consent"
+        }
+      }
+    ],
+    "metrics": {},
+    "previous_conversation_id": null
+  }
+}

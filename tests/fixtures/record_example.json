@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.2",
+  "conversation_id": "c_01JAB3K9Z4X7Q2M8N5T6V1W0YD",
+  "started_at": "2026-10-18T10:02:11Z",
+  "ended_at": "2026-10-18T10:06:40Z",
+  "end_reason": "completed",
+  "channel": "web_voice",
+  "language": {
+    "detected": "es",
+    "switches": [
+      {
+        "at_turn": 7,
+        "to": "en"
+      }
+    ]
+  },
+  "model": {
+    "live": "gemini-live-2.5-flash-native-audio",
+    "text": "gemini-2.5-flash",
+    "prompt_version": "ana-v4"
+  },
+  "candidate": {
+    "consent_recording": true,
+    "role": "delivery_rider",
+    "full_name": "Laura Gómez",
+    "phone": "+34600123456",
+    "preferred_store_id": "vlc-ruzafa",
+    "availability": [
+      {
+        "day": "mon",
+        "shift": "morning"
+      },
+      {
+        "day": "sat",
+        "shift": "night"
+      }
+    ],
+    "weekly_hours": 25,
+    "start_date": "2026-10-26",
+    "right_to_work": true,
+    "is_18_or_over": true,
+    "driving_licence": true,
+    "own_vehicle": false,
+    "experience_months": 14,
+    "experience_summary": "Delivery rider for a year in Valencia"
+  },
+  "slot_meta": {
+    "phone": {
+      "attempts": 2,
+      "source": "live_tool",
+      "corrected": false
+    },
+    "start_date": {
+      "attempts": 1,
+      "source": "live_tool",
+      "raw": "el lunes que viene"
+    }
+  },
+  "screening": {
+    "status": "meets_requirements",
+    "knockouts": [],
+    "flags": [
+      "FLAG_NO_VEHICLE"
+    ],
+    "reconciliation_conflicts": []
+  },
+  "sentiment": {
+    "avg": 0.4,
+    "min": -0.2,
+    "frustration_events": 0,
+    "trend": "stable"
+  },
+  "summary": {
+    "headline": "Rider candidate for Valencia Ruzafa, 14 months delivery experience, can start 26 Oct.",
+    "key_points": [
+      "Available Monday mornings and Saturday nights",
+      "25 hours per week",
+      "Has a licence but no own vehicle"
+    ],
+    "candidate_questions": [
+      "Pay per hour for riders",
+      "Is a motorbike provided?"
+    ],
+    "recruiter_next_steps": [
+      "Confirm vehicle arrangement"
+    ]
+  },
+  "transcript": [
+    {
+      "turn": 1,
+      "speaker": "agent",
+      "text": "¡Hola! Soy Ana, de Acme Burgers. ¿Te parece bien que grabemos la conversación?",
+      "ts": "2026-10-18T10:02:12Z"
+    },
+    {
+      "turn": 2,
+      "speaker": "candidate",
+      "text": "Hola, sí, no hay problema.",
+      "ts": "2026-10-18T10:02:20Z",
+      "sentiment": 0.3
+    }
+  ],
+  "events": [
+    {
+      "ts": "2026-10-18T10:02:25Z",
+      "type": "slot_filled",
+      "payload": {
+        "slot": "role",
+        "value": "delivery_rider"
+      }
+    },
+    {
+      "ts": "2026-10-18T10:03:10Z",
+      "type": "validation_failed",
+      "payload": {
+        "slot": "phone",
+        "error": "too_short"
+      }
+    },
+    {
+      "ts": "2026-10-18T10:05:02Z",
+      "type": "faq_answered",
+      "payload": {
+        "query": "cuánto pagan",
+        "source": "faq_es.md#pay"
+      }
+    }
+  ]
+}

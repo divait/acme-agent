@@ -1,0 +1,33 @@
+anton_version: 1
+project: acme-agent
+profile: lite
+root: anton
+ids:
+  padding: 3
+stories:
+  source: local
+validation:
+  severity: error
+workflow:
+  mode: greenfield
+  epics: off
+# Build workflow: this project builds every spec directly on `main` (no worktrees,
+# branches or PRs). The main session acts as tech-lead and dispatches the
+# anton-team swe / tester / reviewer agents against the main checkout.
+team:
+  preset: standard
+  max_iterations: 3
+  roles:
+    tester: on
+    reviewer: on
+  models:
+    swe: sonnet
+    tester: sonnet
+  pr:
+    base: main
+    draft: false
+  rubric: anton/rubric.md
+  worktrees: .anton-worktrees
+  smoke:
+    command: ""
+    required: off

@@ -1,0 +1,169 @@
+{
+  "language": "es",
+  "calls": [
+    [
+      "record",
+      "consent_recording",
+      "yes",
+      "yes"
+    ],
+    [
+      "record",
+      "role",
+      "crew_member",
+      "crew"
+    ],
+    [
+      "record",
+      "preferred_store_id",
+      "Madrid",
+      "Madrid"
+    ],
+    [
+      "record",
+      "preferred_store_id",
+      "Chamberí",
+      "Chamberí"
+    ],
+    [
+      "end",
+      "abandoned"
+    ]
+  ],
+  "expected": {
+    "schema_version": "1.2",
+    "conversation_id": "conv-store_ambiguity_resolved",
+    "started_at": "2026-10-18T09:00:00Z",
+    "ended_at": "2026-10-18T09:00:00Z",
+    "end_reason": "abandoned",
+    "channel": "voice",
+    "language": {
+      "detected": "es",
+      "switches": []
+    },
+    "model": {
+      "live": "live-model",
+      "text": "text-model",
+      "prompt_version": "test"
+    },
+    "candidate": {
+      "consent_recording": true,
+      "role": "crew_member",
+      "full_name": null,
+      "phone": null,
+      "email": null,
+      "preferred_store_id": "mad-chamberi",
+      "availability": [],
+      "weekly_hours": null,
+      "start_date": null,
+      "right_to_work": null,
+      "is_18_or_over": null,
+      "driving_licence": null,
+      "own_vehicle": null,
+      "experience_months": null,
+      "experience_summary": null,
+      "languages": []
+    },
+    "slot_meta": {
+      "consent_recording": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "yes",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": true,
+        "cross_check_agrees": true
+      },
+      "role": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "crew",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": "crew_member",
+        "cross_check_agrees": true
+      },
+      "preferred_store_id": {
+        "attempts": 2,
+        "source": "live_tool",
+        "raw": "Chamberí",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": null,
+        "cross_check_agrees": null
+      }
+    },
+    "screening": {
+      "status": "needs_human_review",
+      "knockouts": [],
+      "review_reasons": [
+        "REVIEW_UNRESOLVED_SLOTS",
+        "REVIEW_INCOMPLETE_CALL"
+      ],
+      "flags": [],
+      "reconciliation_conflicts": []
+    },
+    "sentiment": null,
+    "summary": null,
+    "transcript": [],
+    "events": [
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "consent_recording",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "phase_changed",
+        "payload": {
+          "from": "greeting",
+          "to": "collecting"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "role",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "validation_failed",
+        "payload": {
+          "field": "preferred_store_id",
+          "code": "ambiguous"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "preferred_store_id",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "phase_changed",
+        "payload": {
+          "from": "collecting",
+          "to": "ended"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "interview_ended",
+        "payload": {
+          "reason": "abandoned"
+        }
+      }
+    ],
+    "metrics": {},
+    "previous_conversation_id": null
+  }
+}

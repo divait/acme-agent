@@ -1,0 +1,404 @@
+{
+  "language": "en",
+  "calls": [
+    [
+      "record",
+      "consent_recording",
+      "yes",
+      "yes, that's fine"
+    ],
+    [
+      "record",
+      "role",
+      "crew_member",
+      "counter crew"
+    ],
+    [
+      "record",
+      "full_name",
+      "Jane Doe",
+      "Jane Doe"
+    ],
+    [
+      "record",
+      "phone",
+      "600 111 222",
+      "six hundred, one one one, two two two"
+    ],
+    [
+      "record",
+      "preferred_store_id",
+      "Gràcia",
+      "Gracia in Barcelona"
+    ],
+    [
+      "record",
+      "availability",
+      "tue:afternoon,thu:afternoon",
+      "Tuesday and Thursday afternoons"
+    ],
+    [
+      "record",
+      "weekly_hours",
+      "16",
+      "about sixteen hours"
+    ],
+    [
+      "record",
+      "start_date",
+      "2026-11-09",
+      "November ninth"
+    ],
+    [
+      "record",
+      "right_to_work",
+      "yes",
+      "yes I do"
+    ],
+    [
+      "record",
+      "is_18_or_over",
+      "yes",
+      "yes"
+    ],
+    [
+      "record",
+      "experience_months",
+      "6",
+      "six months"
+    ],
+    [
+      "record",
+      "languages",
+      "en,es",
+      "English and Spanish"
+    ],
+    [
+      "confirm_profile"
+    ],
+    [
+      "end",
+      "completed"
+    ]
+  ],
+  "expected": {
+    "schema_version": "1.2",
+    "conversation_id": "conv-happy_path_crew_en",
+    "started_at": "2026-10-18T09:00:00Z",
+    "ended_at": "2026-10-18T09:00:00Z",
+    "end_reason": "completed",
+    "channel": "voice",
+    "language": {
+      "detected": "en",
+      "switches": []
+    },
+    "model": {
+      "live": "live-model",
+      "text": "text-model",
+      "prompt_version": "test"
+    },
+    "candidate": {
+      "consent_recording": true,
+      "role": "crew_member",
+      "full_name": "Jane Doe",
+      "phone": "+34600111222",
+      "email": null,
+      "preferred_store_id": "bcn-gracia",
+      "availability": [
+        {
+          "day": "tue",
+          "shift": "afternoon"
+        },
+        {
+          "day": "thu",
+          "shift": "afternoon"
+        }
+      ],
+      "weekly_hours": 16,
+      "start_date": "2026-11-09",
+      "right_to_work": true,
+      "is_18_or_over": true,
+      "driving_licence": null,
+      "own_vehicle": null,
+      "experience_months": 6,
+      "experience_summary": null,
+      "languages": [
+        "en",
+        "es"
+      ]
+    },
+    "slot_meta": {
+      "consent_recording": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "yes, that's fine",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": true,
+        "cross_check_agrees": true
+      },
+      "role": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "counter crew",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": "crew_member",
+        "cross_check_agrees": true
+      },
+      "full_name": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "Jane Doe",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": null,
+        "cross_check_agrees": null
+      },
+      "phone": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "six hundred, one one one, two two two",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": null,
+        "cross_check_agrees": null
+      },
+      "preferred_store_id": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "Gracia in Barcelona",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": null,
+        "cross_check_agrees": null
+      },
+      "availability": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "Tuesday and Thursday afternoons",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": [
+          {
+            "day": "tue",
+            "shift": "afternoon"
+          },
+          {
+            "day": "thu",
+            "shift": "afternoon"
+          }
+        ],
+        "cross_check_agrees": true
+      },
+      "weekly_hours": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "about sixteen hours",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": 16,
+        "cross_check_agrees": true
+      },
+      "start_date": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "November ninth",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": {
+          "issue": "month_only"
+        },
+        "cross_check_agrees": null
+      },
+      "right_to_work": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "yes I do",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": true,
+        "cross_check_agrees": true
+      },
+      "is_18_or_over": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "yes",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": true,
+        "cross_check_agrees": true
+      },
+      "experience_months": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "six months",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": 6,
+        "cross_check_agrees": true
+      },
+      "languages": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "English and Spanish",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": [
+          "en",
+          "es"
+        ],
+        "cross_check_agrees": true
+      }
+    },
+    "screening": {
+      "status": "meets_requirements",
+      "knockouts": [],
+      "review_reasons": [],
+      "flags": [],
+      "reconciliation_conflicts": []
+    },
+    "sentiment": null,
+    "summary": null,
+    "transcript": [],
+    "events": [
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "consent_recording",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "phase_changed",
+        "payload": {
+          "from": "greeting",
+          "to": "collecting"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "role",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "full_name",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "phone",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "preferred_store_id",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "availability",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "weekly_hours",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "start_date",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "right_to_work",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "is_18_or_over",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "experience_months",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "phase_changed",
+        "payload": {
+          "from": "collecting",
+          "to": "confirmation"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "languages",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "phase_changed",
+        "payload": {
+          "from": "confirmation",
+          "to": "closing"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "phase_changed",
+        "payload": {
+          "from": "closing",
+          "to": "ended"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "interview_ended",
+        "payload": {
+          "reason": "completed"
+        }
+      }
+    ],
+    "metrics": {},
+    "previous_conversation_id": null
+  }
+}

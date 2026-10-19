@@ -1,0 +1,206 @@
+{
+  "language": "es",
+  "calls": [
+    [
+      "record",
+      "consent_recording",
+      "yes",
+      "ok"
+    ],
+    [
+      "record",
+      "role",
+      "crew_member",
+      "crew"
+    ],
+    [
+      "record",
+      "full_name",
+      "Marta Soler",
+      "Marta Soler"
+    ],
+    [
+      "record",
+      "phone",
+      "12",
+      "uno dos"
+    ],
+    [
+      "record",
+      "phone",
+      "6001",
+      "seis cero cero uno"
+    ],
+    [
+      "record",
+      "phone",
+      "644 321 098",
+      "644 321 098"
+    ],
+    [
+      "end",
+      "abandoned"
+    ]
+  ],
+  "expected": {
+    "schema_version": "1.2",
+    "conversation_id": "conv-invalid_phone_twice_then_valid",
+    "started_at": "2026-10-18T09:00:00Z",
+    "ended_at": "2026-10-18T09:00:00Z",
+    "end_reason": "abandoned",
+    "channel": "voice",
+    "language": {
+      "detected": "es",
+      "switches": []
+    },
+    "model": {
+      "live": "live-model",
+      "text": "text-model",
+      "prompt_version": "test"
+    },
+    "candidate": {
+      "consent_recording": true,
+      "role": "crew_member",
+      "full_name": "Marta Soler",
+      "phone": "+34644321098",
+      "email": null,
+      "preferred_store_id": null,
+      "availability": [],
+      "weekly_hours": null,
+      "start_date": null,
+      "right_to_work": null,
+      "is_18_or_over": null,
+      "driving_licence": null,
+      "own_vehicle": null,
+      "experience_months": null,
+      "experience_summary": null,
+      "languages": []
+    },
+    "slot_meta": {
+      "consent_recording": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "ok",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": true,
+        "cross_check_agrees": true
+      },
+      "role": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "crew",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": "crew_member",
+        "cross_check_agrees": true
+      },
+      "full_name": {
+        "attempts": 1,
+        "source": "live_tool",
+        "raw": "Marta Soler",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": null,
+        "cross_check_agrees": null
+      },
+      "phone": {
+        "attempts": 3,
+        "source": "live_tool",
+        "raw": "644 321 098",
+        "corrected": false,
+        "status": "filled",
+        "cross_check": null,
+        "cross_check_agrees": null
+      }
+    },
+    "screening": {
+      "status": "needs_human_review",
+      "knockouts": [],
+      "review_reasons": [
+        "REVIEW_UNRESOLVED_SLOTS",
+        "REVIEW_INCOMPLETE_CALL"
+      ],
+      "flags": [],
+      "reconciliation_conflicts": []
+    },
+    "sentiment": null,
+    "summary": null,
+    "transcript": [],
+    "events": [
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "consent_recording",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "phase_changed",
+        "payload": {
+          "from": "greeting",
+          "to": "collecting"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "role",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "full_name",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "validation_failed",
+        "payload": {
+          "field": "phone",
+          "code": "too_short"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "validation_failed",
+        "payload": {
+          "field": "phone",
+          "code": "too_short"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "slot_filled",
+        "payload": {
+          "field": "phone",
+          "source": "live_tool"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "phase_changed",
+        "payload": {
+          "from": "collecting",
+          "to": "ended"
+        }
+      },
+      {
+        "ts": "2026-10-18T09:00:00Z",
+        "type": "interview_ended",
+        "payload": {
+          "reason": "abandoned"
+        }
+      }
+    ],
+    "metrics": {},
+    "previous_conversation_id": null
+  }
+}

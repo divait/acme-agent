@@ -1,0 +1,28 @@
+# Labelled FAQ questions for tuning the retrieval threshold (live test in tests/unit/test_retriever.py).
+questions:
+  - {lang: es, q: "¿cuánto pagan a los repartidores?", expect: pay-rider}
+  - {lang: es, q: "Qué sueldo tiene alguien que trabaja en cocina", expect: pay-kitchen}
+  - {lang: es, q: "me gustaría saber cuánto se gana atendiendo en el mostrador", expect: pay-crew}
+  - {lang: es, q: "¿Me van a dar uniforme o tengo que comprarlo yo?", expect: uniform}
+  - {lang: es, q: "Soy estudiante, ¿puedo compatibilizarlo con las clases?", expect: students-flexible}
+  - {lang: es, q: "¿Qué tipo de contrato me harían, fijo o temporal?", expect: contract-types}
+  - {lang: es, q: "tengo 17 años, ¿puedo entrar?", expect: minimum-age}
+  - {lang: es, q: "¿Cuánto tarda el proceso desde que hablo con vosotros hasta empezar?", expect: hiring-timeline}
+  - {lang: es, q: "¿Necesito tener moto propia para repartir?", expect: rider-vehicle}
+  - {lang: es, q: "¿Dan formación a quien no tiene experiencia?", expect: training}
+  - {lang: en, q: "How much do delivery riders earn per hour?", expect: pay-rider}
+  - {lang: en, q: "what's the salary for kitchen staff", expect: pay-kitchen}
+  - {lang: en, q: "Do I have to buy my own uniform?", expect: uniform}
+  - {lang: en, q: "I am a student, can I fit this around my classes?", expect: students-flexible}
+  - {lang: en, q: "Is the job permanent or a temporary contract?", expect: contract-types}
+  - {lang: en, q: "I'm 17, am I allowed to apply?", expect: minimum-age}
+  - {lang: en, q: "How long until I hear back and can start working?", expect: hiring-timeline}
+  - {lang: en, q: "Do I need my own motorbike to do deliveries?", expect: rider-vehicle}
+  - {lang: en, q: "Will I get any training if I have never worked in a restaurant?", expect: training}
+  - {lang: en, q: "Can I choose morning shifts only?", expect: shifts}
+off_topic:
+  - {lang: es, q: "¿Quién ganó el partido de fútbol ayer?"}
+  - {lang: es, q: "¿Cuál es la capital de Australia?"}
+  - {lang: en, q: "What's the best way to cook a steak at home?"}
+  - {lang: en, q: "Can you recommend a good movie to watch tonight?"}
+  - {lang: en, q: "How do I reset my router password?"}
